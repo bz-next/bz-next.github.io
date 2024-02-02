@@ -1,0 +1,11 @@
+---
+layout: post
+title: BZ-Next Site Created
+subtitle: Towards the future!
+gh-repo: daattali/beautiful-jekyll
+gh-badge: [star, fork, follow]
+tags: [Site Updates]
+comments: true
+---
+
+Welcome to the site for BZ-Next. This will mostly be a place for development notes, build instructions, dev releases, and updates.
