@@ -10,7 +10,7 @@ The following instructions are for Fedora 39. If using another distro, package n
 ### Install development tools
 
 ```
-$ sudo dnf install "Development Tools"
+$ sudo dnf groupinstall "Development Tools"
 $ sudo dnf install cmake g++ mesa-libGL-devel mesa-libGLU-devel SDL2-devel libpng-devel curl-devel c-ares-devel glew-devel ncurses-devel
 ```
 
