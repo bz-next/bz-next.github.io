@@ -18,14 +18,14 @@
   <meta name="author" content="BZ-Next">
   
 
-  <meta name="description" content="# Building the source code on Linux In order to build BZ-New, you will need: - OpenGL Support - LibPNG - The c-ares library - libcurl - CMake ``` git clone ... cd bzflag-experiments git checkout magnum-experiment git submodule update --init --recursive mkdir build cd build cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=On -DCMAKE_BUILD_TYPE=Debug .....">
+  <meta name="description" content="# Building the source code on Linux The following instructions are for Fedora 39. If using another distro, package names and package install procedure may be different, but the overall process should be the same. ### Install development tools ``` $ sudo dnf install &quot;Development Tools&quot; $ sudo dnf install...">
 
   
 
   
 
   
-  <link rel="alternate" type="application/rss+xml" title="BZ-Next: Modernizing BZFlag" href="/feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="BZ-Next: Modernizing BZFlag" href="http://localhost:4000/feed.xml">
   
 
   
@@ -80,16 +80,16 @@
   
   <meta property="og:site_name" content="BZ-Next: Modernizing BZFlag">
   <meta property="og:title" content="Building | BZ-Next: Modernizing BZFlag">
-  <meta property="og:description" content="# Building the source code on Linux In order to build BZ-New, you will need: - OpenGL Support - LibPNG - The c-ares library - libcurl - CMake ``` git clone ... cd bzflag-experiments git checkout magnum-experiment git submodule update --init --recursive mkdir build cd build cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=On -DCMAKE_BUILD_TYPE=Debug .....">
+  <meta property="og:description" content="# Building the source code on Linux The following instructions are for Fedora 39. If using another distro, package names and package install procedure may be different, but the overall process should be the same. ### Install development tools ``` $ sudo dnf install &quot;Development Tools&quot; $ sudo dnf install...">
 
   
-  <meta property="og:image" content="/assets/img/avatar-icon.png">
+  <meta property="og:image" content="http://localhost:4000/assets/img/avatar-icon.png">
   
 
   
   <meta property="og:type" content="website">
-  <meta property="og:url" content="/building/">
-  <link rel="canonical" href="/building/">
+  <meta property="og:url" content="http://localhost:4000/building/">
+  <link rel="canonical" href="http://localhost:4000/building/">
   
 
   
@@ -99,10 +99,10 @@
   <meta name="twitter:creator" content="@">
 
   <meta property="twitter:title" content="Building | BZ-Next: Modernizing BZFlag">
-  <meta property="twitter:description" content="# Building the source code on Linux In order to build BZ-New, you will need: - OpenGL Support - LibPNG - The c-ares library - libcurl - CMake ``` git clone ... cd bzflag-experiments git checkout magnum-experiment git submodule update --init --recursive mkdir build cd build cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=On -DCMAKE_BUILD_TYPE=Debug .....">
+  <meta property="twitter:description" content="# Building the source code on Linux The following instructions are for Fedora 39. If using another distro, package names and package install procedure may be different, but the overall process should be the same. ### Install development tools ``` $ sudo dnf install &quot;Development Tools&quot; $ sudo dnf install...">
 
   
-  <meta name="twitter:image" content="/assets/img/avatar-icon.png">
+  <meta name="twitter:image" content="http://localhost:4000/assets/img/avatar-icon.png">
   
 
   
@@ -122,7 +122,7 @@
   
 
 
-  <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom top-nav-regular"><a class="navbar-brand" href="/">BZ-Next: Modernizing BZFlag</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom top-nav-regular"><a class="navbar-brand" href="http://localhost:4000/">BZ-Next: Modernizing BZFlag</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
@@ -159,7 +159,7 @@
   
     <div class="avatar-container">
       <div class="avatar-img-border">
-        <a href="/">
+        <a href="http://localhost:4000/">
           <img alt="Navigation bar avatar" class="avatar-img" src="/assets/img/avatar-icon.png" />
         </a>
       </div>
@@ -279,24 +279,50 @@
 
       <h1 id="building-the-source-code-on-linux">Building the source code on Linux</h1>
 
-<p>In order to build BZ-New, you will need:</p>
-<ul>
-  <li>OpenGL Support</li>
-  <li>LibPNG</li>
-  <li>The c-ares library</li>
-  <li>libcurl</li>
-  <li>CMake</li>
-</ul>
+<p>The following instructions are for Fedora 39. If using another distro, package names and package install procedure may be different, but the overall process should be the same.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone ...
-cd bzflag-experiments
-git checkout magnum-experiment
-git submodule update --init --recursive
-mkdir build
-cd build
-cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=On -DCMAKE_BUILD_TYPE=Debug ..
-make -j$(nproc)
+<h3 id="install-development-tools">Install development tools</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo dnf install "Development Tools"
+$ sudo dnf install cmake g++ mesa-libGL-devel mesa-libGLU-devel SDL2-devel libpng-devel curl-devel c-ares-devel glew-devel ncurses-devel
 </code></pre></div></div>
+
+<h3 id="clone-repository-and-populate-submodules">Clone repository and populate submodules</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git clone https://github.com/bz-next/bz-next.git
+$ cd bz-next
+$ git submodule update --init --recursive
+</code></pre></div></div>
+
+<h3 id="make-a-directory-to-contain-build-stuff">Make a directory to contain build stuff</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ mkdir build
+$ cd build
+</code></pre></div></div>
+
+<h3 id="run-cmake-to-configure-the-build">Run cmake to configure the build</h3>
+
+<p>Specify any build options here. You can build a release build (more optimized) by specifying <code class="language-plaintext highlighter-rouge">-DCMAKE_BUILD_TYPE=Release</code> instead of <code class="language-plaintext highlighter-rouge">Debug</code>. <code class="language-plaintext highlighter-rouge">-DCMAKE_EXPORT_COMPILE_COMMANDS=On</code> generates a <code class="language-plaintext highlighter-rouge">compile-commands.json</code> that can be fed to <code class="language-plaintext highlighter-rouge">clangd</code> for editor instrumentation.</p>
+
+<p>The following will build a debug build, and disable the server, bzadmin, and clients:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=On -DCMAKE_BUILD_TYPE=Debug -DENABLE_CLIENT=TRUE -DENABLE_SERVER=FALSE -DENABLE_PLUGINS=FALSE ..
+</code></pre></div></div>
+
+<h3 id="run-make">Run make</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ make -j$(nproc)
+</code></pre></div></div>
+
+<h3 id="running-the-client">Running the client</h3>
+
+<p>The client looks for textures in <code class="language-plaintext highlighter-rouge">/data</code> from the directory from which it is run. It’s best to execute the client from the main repo directory so that it can find everything it needs.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cd ..
+$ build/Debug/bin/bzflag-next
+</code></pre></div></div>
+
+<p>If you built a Release client, the path would be <code class="language-plaintext highlighter-rouge">build/Release/bin/bzflag-next</code></p>
 
 <h1 id="cross-compiling-for-windows-from-linux-using-mingw64">Cross-compiling for Windows from Linux using MinGW64</h1>
 
@@ -353,7 +379,7 @@ make -j$(nproc)
       
         &nbsp;&bull;&nbsp;
         <span class="author-site">
-          <a href="/">bz-next.github.io</a>
+          <a href="http://localhost:4000/">bz-next.github.io</a>
         </span>
       
 
