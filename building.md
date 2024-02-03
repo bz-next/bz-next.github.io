@@ -115,7 +115,7 @@ $ sudo mingw64-make install
 
 $ cd ../../../..
 
-$ # Need zlib for libpng
+# Need zlib for libpng
 $ wget https://www.zlib.net/zlib-1.3.1.tar.gz
 $ tar -xf ./zlib-1.3.1.tar.gz
 $ cd zlib-1.3.1/
@@ -210,9 +210,6 @@ Now we are finally tooled up to build the client.
 $ git clone https://github.com/bz-next/bz-next.git
 $ cd bz-next
 
-# Currently, we have a branch called mingw-test where the cmake has been hacked
-# for a Windows build. This will be cleaned up and merged in the future.
-$ git checkout mingw-test
 $ git submodule update --init --recursive
 
 mkdir build
@@ -230,5 +227,5 @@ Finally, we need to package the `.dll` files that Windows users will need to run
 from `$MINGW_PREFIX/bin` to your distribution:
 
 ```
-cp $MINGW_PREFIX/bin/*.dll .
+$ cp $MINGW_PREFIX/bin/*.dll .
 ```
