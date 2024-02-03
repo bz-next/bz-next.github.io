@@ -24,9 +24,11 @@ navbar-links:
   Releases: "releases"
   Building: "building"
   Resources:
-    - GitHub: "https://github.com/bz-next"
+    - GitHub: "https://github.com/bz-next/bz-next"
     - BZFlag Homepage: "https://www.bzflag.org"
+    - BZFlag Wiki: "https://wiki.bzflag.org/Main_Page"
     - BZFlag Forums: "https://forums.bzflag.org"
+  GitHub: "https://github.com/bz-next/bz-next"
 
 
 ################
