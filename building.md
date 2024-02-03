@@ -218,9 +218,8 @@ $ git submodule update --init --recursive
 mkdir build
 cd build
 
-# Currently need to set -fpermissive on the build, that should be made default
-# for mingw64 builds...
-$ mingw64-cmake -DENABLE_BZADMIN=FALSE -DENABLE_SERVER=FALSE -DENABLE_ROBOTS=FALSE -DENABLE_PLUGINS=FALSE -DCMAKE_CXX_FLAGS="-fpermissive" -DCMAKE_BUILD_TYPE=Release ..
+# Just build the client. Builds for other targets might be broken
+$ mingw64-cmake -DENABLE_BZADMIN=FALSE -DENABLE_SERVER=FALSE -DENABLE_ROBOTS=FALSE -DENABLE_PLUGINS=FALSE -DCMAKE_BUILD_TYPE=Release ..
 
 # Build
 $ mingw64-make -j$(nproc)
