@@ -396,7 +396,7 @@ $ sudo mingw64-make install
 
 $ cd ../../../..
 
-$ # Need zlib for libpng
+# Need zlib for libpng
 $ wget https://www.zlib.net/zlib-1.3.1.tar.gz
 $ tar -xf ./zlib-1.3.1.tar.gz
 $ cd zlib-1.3.1/
@@ -490,9 +490,6 @@ $ sudo cp ./libtre.dll.a ./libtre.a
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git clone https://github.com/bz-next/bz-next.git
 $ cd bz-next
 
-# Currently, we have a branch called mingw-test where the cmake has been hacked
-# for a Windows build. This will be cleaned up and merged in the future.
-$ git checkout mingw-test
 $ git submodule update --init --recursive
 
 mkdir build
@@ -509,7 +506,7 @@ $ mingw64-make -j$(nproc)
 Finally, we need to package the <code class="language-plaintext highlighter-rouge">.dll</code> files that Windows users will need to run the program. A quick fix is to just copy all the <code class="language-plaintext highlighter-rouge">.dll</code> files
 from <code class="language-plaintext highlighter-rouge">$MINGW_PREFIX/bin</code> to your distribution:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cp $MINGW_PREFIX/bin/*.dll .
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cp $MINGW_PREFIX/bin/*.dll .
 </code></pre></div></div>
 
 
