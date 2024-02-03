@@ -29,17 +29,6 @@ as part of this project has a few key purposes:
 
 The new rendering engine will, however, enable developers to use modern UI development tools, which would make a UI overhaul for the game possible.
 
-## What does it currently look like?
-
-![Rats Nest by Winny](../assets/img/screen0.jpg)
-Map: Rats Nest by Winny
-
-![Urban Jungle by Army of One](../assets/img/screen1.jpg)
-Map: Urban Jungle by Army of One
-
-![Fairground](../assets/img/screen2.jpg)
-Map: Fairground
-
 ## What's different about it
 - It's much faster than the classic BZFlag client for real-world maps. Framerates can be 5-10x higher in the new client when compared to the old one.
 - Modern OpenGL allows for custom shaders, which could allow shadow mapping, bloom, ambient occlusion, PBR, and other cool effects that could make maps look awesome.
