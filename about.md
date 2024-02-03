@@ -15,6 +15,20 @@ is a key focus.
 The BZ-Next project is already a full-featured BZFlag client. You can connect to a server, chat, watch the scoreboard, and inspect the map. Tanks, bullets,
 effects and sounds will be added incrementally.
 
+## Project philosophy (What this project isn't)
+
+BZFlag is already a fun game. The purpose of this project is not to change gameplay, physics, or add new, breaking client and server features. Rather,
+the goal is 100% compatibility with existing BZFlag infrastructure.
+
+The goal of this project is not to overhaul the game UI (menus, UI layout, etc). That is a job best left to a UI-focused team. The UI developed
+as part of this project has a few key purposes:
+
+- To get the game into a playable, functional state with the new renderer
+- To provide debug info and tools
+- To serve as the basis for a map editor in the future
+
+The new rendering engine will, however, enable developers to use modern UI development tools, which would make a UI overhaul for the game possible.
+
 ## What does it currently look like?
 
 ![Rats Nest by Winny](../assets/img/screen0.jpg)
