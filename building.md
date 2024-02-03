@@ -223,7 +223,7 @@ cd build
 $ mingw64-cmake -DENABLE_BZADMIN=FALSE -DENABLE_SERVER=FALSE -DENABLE_ROBOTS=FALSE -DENABLE_PLUGINS=FALSE -DCMAKE_CXX_FLAGS="-fpermissive" -DCMAKE_BUILD_TYPE=Release ..
 
 # Build
-$ sudo mingw64-make -j$(nproc)
+$ mingw64-make -j$(nproc)
 ```
 
 To make a distribution, copy the files from `Release/bin/` to a new directory. Copy the `data` directory from the main source dir as well.
