@@ -26,6 +26,20 @@ Check building page for info on how to compile for Windows.
       </item>
     
       <item>
+        <title>Mesh generation cleaned up</title>
+        <description>
+          Memory and CPU reduction - 
+          The world mesh generation code was cleaned up a bit, yielding significant memory savings, and a speedup as well.
+
+In certain cases (involving drawinfo meshes), the old code would copy much more data per mesh than was necessary.
+
+        </description>
+        <pubDate>Sat, 03 Feb 2024 00:00:00 -0500</pubDate>
+        <link>/2024-02-03-meshgen-memory/</link>
+        <guid isPermaLink="true">/2024-02-03-meshgen-memory/</guid>
+      </item>
+    
+      <item>
         <title>BZ-Next Site Created</title>
         <description>
           Towards the future! - 
