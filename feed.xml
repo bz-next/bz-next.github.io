@@ -12,6 +12,20 @@
     
     
       <item>
+        <title>MinGW support added to development branch</title>
+        <description>
+          Cross-compiling works - 
+          MinGW64 cross compiling is now supported in the main development branch.
+
+Check building page for info on how to compile for Windows.
+
+        </description>
+        <pubDate>Sat, 03 Feb 2024 00:00:00 -0500</pubDate>
+        <link>/2024-02-03-mingw-in-dev/</link>
+        <guid isPermaLink="true">/2024-02-03-mingw-in-dev/</guid>
+      </item>
+    
+      <item>
         <title>BZ-Next Site Created</title>
         <description>
           Towards the future! - 
