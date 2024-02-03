@@ -10,4 +10,4 @@ comments: true
 
 MinGW64 cross compiling is now supported in the main development branch.
 
-Check [building](building) page for info on how to compile for Windows.
+Check [building](/building) page for info on how to compile for Windows.
