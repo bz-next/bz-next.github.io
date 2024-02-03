@@ -2,6 +2,8 @@
 layout: home
 title: BZ-Next
 subtitle: Modernizing BZFlag, Building New Tools for the Community
+gh-repo: bz-next/bz-next
+gh-badge: [star, fork, follow]
 ---
 
 ## What is it?
@@ -29,4 +31,9 @@ BZ-Next is still in heavy development, so releases are expected to be buggy. Win
 
 The current goal is to aim for support for OpenGL 2.1, OpenGL ES 2.0, and WebGL 2. Some features might only be supported on more capable platforms. Currently, the development build may not function on all platforms. Help us test it out!
 
+## Follow development on GitHub!
+
+You can follow development progress at [BZ-Next on GitHub](https://github.com/bz-next/bz-next). Contributions, issue reports, etc are welcome!
+
+---
 # Development updates:
