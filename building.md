@@ -39,6 +39,14 @@ The following will build a debug build, and disable the server, bzadmin, and cli
 $ cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=On -DCMAKE_BUILD_TYPE=Debug -DENABLE_CLIENT=TRUE -DENABLE_SERVER=FALSE -DENABLE_PLUGINS=FALSE ..
 ```
 
+If you're building for an embedded device with GLES, add the following defines to your cmake step:
+
+```
+-DMAGNUM_TARGET_GLES=ON -DMAGNUM_TARGET_GLES2=ON
+```
+
+GLES builds currently disable multisampling (defaults to 4x on non-GLES builds), sets texture filters to nearest instead of linear, and sets anisotropy to minimums.
+
 ### Run make
 
 ```
