@@ -346,9 +346,9 @@
       <div class="blog-post">
         <p>GLES2 is now supported in the main development branch. This should help with support for embedded devices (phones, raspberry pi, etc).</p>
 
-<p>When building, specify <code class="language-plaintext highlighter-rouge">-DMAGNUM_TARGET_GLES=ON</code> at cmake time, for example:</p>
+<p>When building, specify <code class="language-plaintext highlighter-rouge">-DMAGNUM_TARGET_GLES=ON -DMAGNUM_TARGET_GLES2=ON</code> at cmake time, for example:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cmake -DMAGNUM_TARGET_GLES=ON -DCMAKE_BUILD_TYPE=Release -DENABLE_CLIENT=TRUE -DENABLE_SERVER=FALSE -DENABLE_PLUGINS=FALSE ..
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cmake -DMAGNUM_TARGET_GLES=ON -DMAGNUM_TARGET_GLES2=ON -DCMAKE_BUILD_TYPE=Release -DENABLE_CLIENT=TRUE -DENABLE_SERVER=FALSE -DENABLE_PLUGINS=FALSE ..
 $ make -j$(nproc)
 </code></pre></div></div>
 
