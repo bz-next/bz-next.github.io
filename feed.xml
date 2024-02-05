@@ -12,6 +12,24 @@
     
     
       <item>
+        <title>GLES2 support added to development branch</title>
+        <description>
+          Supporting embedded OpenGL - 
+          GLES2 is now supported in the main development branch. This should help with support for embedded devices (phones, raspberry pi, etc).
+
+When building, specify -DMAGNUM_TARGET_GLES=ON at cmake time, for example:
+
+$ cmake -DMAGNUM_TARGET_GLES=ON -DCMAKE_BUILD_TYPE=Release -DENABLE_CLIENT=TRUE -DENABLE_SERVER=FALSE -DENABLE_PLUGINS=FALSE ..
+$ make -j$(nproc)
+
+
+        </description>
+        <pubDate>Mon, 05 Feb 2024 00:00:00 -0500</pubDate>
+        <link>/2024-02-05-GLES2/</link>
+        <guid isPermaLink="true">/2024-02-05-GLES2/</guid>
+      </item>
+    
+      <item>
         <title>MinGW support added to development branch</title>
         <description>
           Cross-compiling works - 
