@@ -20,8 +20,8 @@ Map: Rats Nest by Winny
 ![Urban Jungle by Army of One](assets/img/screen1.jpg)
 Map: Urban Jungle by Army of One
 
-![Fairground](assets/img/screen2.jpg)
-Map: Fairground
+![Fairground by Ian](assets/img/screen2.jpg)
+Map: Fairground by Ian
 
 ## Where can I get a copy?
 
