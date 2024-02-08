@@ -11,14 +11,14 @@
 
   
 
-  <title>GLES2 support added to development branch | BZ-Next: Modernizing BZFlag</title>
+  <title>Emscripten WebGL Support | BZ-Next: Modernizing BZFlag</title>
 
   
   
   <meta name="author" content="BZ-Next">
   
 
-  <meta name="description" content="Supporting embedded OpenGL">
+  <meta name="description" content="Supporting WebGL in BZ-Next">
 
   
 
@@ -79,8 +79,8 @@
 
   
   <meta property="og:site_name" content="BZ-Next: Modernizing BZFlag">
-  <meta property="og:title" content="GLES2 support added to development branch | BZ-Next: Modernizing BZFlag">
-  <meta property="og:description" content="Supporting embedded OpenGL">
+  <meta property="og:title" content="Emscripten WebGL Support | BZ-Next: Modernizing BZFlag">
+  <meta property="og:description" content="Supporting WebGL in BZ-Next">
 
   
   <meta property="og:image" content="/assets/img/avatar-icon.png">
@@ -91,9 +91,9 @@
   
   <meta property="og:article:author" content="BZ-Next">
   
-  <meta property="og:article:published_time" content="2024-02-05T00:00:00-05:00">
-  <meta property="og:url" content="/2024-02-05-GLES2/">
-  <link rel="canonical" href="/2024-02-05-GLES2/">
+  <meta property="og:article:published_time" content="2024-02-08T00:00:00-05:00">
+  <meta property="og:url" content="/2024-02-08-webgl/">
+  <link rel="canonical" href="/2024-02-08-webgl/">
   
 
   
@@ -102,8 +102,8 @@
   <meta name="twitter:site" content="@">
   <meta name="twitter:creator" content="@">
 
-  <meta property="twitter:title" content="GLES2 support added to development branch | BZ-Next: Modernizing BZFlag">
-  <meta property="twitter:description" content="Supporting embedded OpenGL">
+  <meta property="twitter:title" content="Emscripten WebGL Support | BZ-Next: Modernizing BZFlag">
+  <meta property="twitter:description" content="Supporting WebGL in BZ-Next">
 
   
   <meta name="twitter:image" content="/assets/img/avatar-icon.png">
@@ -313,16 +313,16 @@
     <div class="row">
       <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
         <div class="post-heading">
-          <h1>GLES2 support added to development branch</h1>
+          <h1>Emscripten WebGL Support</h1>
           
             
-              <h2 class="post-subheading">Supporting embedded OpenGL</h2>
+              <h2 class="post-subheading">Supporting WebGL in BZ-Next</h2>
             
           
           
            
             
-            <span class="post-meta">Posted on February 5, 2024</span>
+            <span class="post-meta">Posted on February 8, 2024</span>
             
             
           
@@ -370,13 +370,12 @@
       
 
       <div class="blog-post">
-        <p>GLES2 is now supported in the main development branch. This should help with support for embedded devices (phones, raspberry pi, etc).</p>
+        <p>A new WebGL-enabled target for an online map viewer has been added, along with support for Emscripten in the build system.</p>
 
-<p>When building, specify <code class="language-plaintext highlighter-rouge">-DMAGNUM_TARGET_GLES=ON -DMAGNUM_TARGET_GLES2=ON</code> at cmake time, for example:</p>
+<p><img src="/assets/img/webgl.png" alt="WebGL Demo" /></p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cmake -DMAGNUM_TARGET_GLES=ON -DMAGNUM_TARGET_GLES2=ON -DCMAKE_BUILD_TYPE=Release -DENABLE_CLIENT=TRUE -DENABLE_SERVER=FALSE -DENABLE_PLUGINS=FALSE ..
-$ make -j$(nproc)
-</code></pre></div></div>
+<p>The client doesn’t render a map yet, but all the mesh/shading code is there to do so. Next is to adapt the .bzw world loader
+from bzfs to load a user-supplied map.</p>
 
       </div>
 
@@ -403,19 +402,12 @@ $ make -j$(nproc)
       <ul class="pagination blog-pager">
         
         <li class="page-item previous">
-          <a class="page-link" href="/2024-02-03-mingw-in-dev/" data-toggle="tooltip" data-placement="top" title="MinGW support added to development branch">
+          <a class="page-link" href="/2024-02-05-Librem5/" data-toggle="tooltip" data-placement="top" title="BZ-Next Running on Librem 5 phone">
             <i class="fas fa-arrow-left" alt="Previous Post"></i>
             <span class="d-none d-sm-inline-block">Previous Post</span>
           </a>
         </li>
         
-        
-        <li class="page-item next">
-          <a class="page-link" href="/2024-02-05-Librem5/" data-toggle="tooltip" data-placement="top" title="BZ-Next Running on Librem 5 phone">
-            <span class="d-none d-sm-inline-block">Next Post</span>
-            <i class="fas fa-arrow-right" alt="Next Post"></i>
-          </a>
-        </li>
         
       </ul>
       

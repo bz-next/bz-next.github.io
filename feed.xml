@@ -12,6 +12,17 @@
     
     
       <item>
+        <title>Emscripten WebGL Support</title>
+        <description>
+          Supporting WebGL in BZ-Next - 
+          A new WebGL-enabled target for an online map viewer has been added, along with support for Emscripten in the build system. The client doesn’t render a map yet, but all the mesh/shading code is there to do so. Next is to adapt the .bzw world loader from bzfs to load...
+        </description>
+        <pubDate>Thu, 08 Feb 2024 00:00:00 -0500</pubDate>
+        <link>/2024-02-08-webgl/</link>
+        <guid isPermaLink="true">/2024-02-08-webgl/</guid>
+      </item>
+    
+      <item>
         <title>BZ-Next Running on Librem 5 phone</title>
         <description>
           Supporting embedded OpenGL - 
