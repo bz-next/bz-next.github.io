@@ -408,7 +408,7 @@ $ cp $MINGW_PREFIX/bin/*.dll .
 ```
 
 
-### Build the mapviewer target for web with Emscripten
+# Build the mapviewer target for web with Emscripten
 
 You will need, specifically, `emscripten 3.1.51`, at least until Magnum is updated to build with `3.1.52` and above, as emscripten changed how their linking step works recently.
 
