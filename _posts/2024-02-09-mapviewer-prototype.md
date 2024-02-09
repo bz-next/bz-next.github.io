@@ -20,3 +20,9 @@ In the future, I'll upload the textures for some popular maps, so that those wil
 The map viewer can also be built for desktop, where it can load any textures from images.bzflag.org that it likes.
 
 ![Desktop Demo](/assets/img/mapviewer2.png)
+
+Try it out if you're curious!
+
+The real power of the Magnum graphics library is being able to support web, mobile, and desktop all from the same codebase, so you can have one codebase that generates apps for all the various targets at the same time. This is a basic demo of getting something building from the BZFlag codebase that targets both WebGL and desktop.
+
+I'll add the desktop version of the map viewer to the next Windows release. It could be a handy tool for previewing maps quickly.
