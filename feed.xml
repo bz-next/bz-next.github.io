@@ -12,6 +12,17 @@
     
     
       <item>
+        <title>WebGL Mapviewer Demo Online</title>
+        <description>
+          Supporting WebGL in BZ-Next - 
+          A WebGL map viewer demo app is online at https://bz-next.github.io/mapviewer/mapviewer.html Currently the online demo can’t access any textures that aren’t bundled with the game, so try it on maps that don’t use custom textures. Meshes and so on should work fine, however. If you load a map that uses non-standard...
+        </description>
+        <pubDate>Fri, 09 Feb 2024 00:00:00 -0500</pubDate>
+        <link>/2024-02-09-mapviewer-prototype/</link>
+        <guid isPermaLink="true">/2024-02-09-mapviewer-prototype/</guid>
+      </item>
+    
+      <item>
         <title>Emscripten WebGL Support</title>
         <description>
           Supporting WebGL in BZ-Next - 

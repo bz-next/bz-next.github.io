@@ -11,14 +11,14 @@
 
   
 
-  <title>MinGW support added to development branch | BZ-Next: Modernizing BZFlag</title>
+  <title>WebGL Mapviewer Demo Online | BZ-Next: Modernizing BZFlag</title>
 
   
   
   <meta name="author" content="BZ-Next">
   
 
-  <meta name="description" content="Cross-compiling works">
+  <meta name="description" content="Supporting WebGL in BZ-Next">
 
   
 
@@ -79,8 +79,8 @@
 
   
   <meta property="og:site_name" content="BZ-Next: Modernizing BZFlag">
-  <meta property="og:title" content="MinGW support added to development branch | BZ-Next: Modernizing BZFlag">
-  <meta property="og:description" content="Cross-compiling works">
+  <meta property="og:title" content="WebGL Mapviewer Demo Online | BZ-Next: Modernizing BZFlag">
+  <meta property="og:description" content="Supporting WebGL in BZ-Next">
 
   
   <meta property="og:image" content="/assets/img/avatar-icon.png">
@@ -91,9 +91,9 @@
   
   <meta property="og:article:author" content="BZ-Next">
   
-  <meta property="og:article:published_time" content="2024-02-03T00:00:00-05:00">
-  <meta property="og:url" content="/2024-02-03-mingw-in-dev/">
-  <link rel="canonical" href="/2024-02-03-mingw-in-dev/">
+  <meta property="og:article:published_time" content="2024-02-09T00:00:00-05:00">
+  <meta property="og:url" content="/2024-02-09-mapviewer-prototype/">
+  <link rel="canonical" href="/2024-02-09-mapviewer-prototype/">
   
 
   
@@ -102,8 +102,8 @@
   <meta name="twitter:site" content="@">
   <meta name="twitter:creator" content="@">
 
-  <meta property="twitter:title" content="MinGW support added to development branch | BZ-Next: Modernizing BZFlag">
-  <meta property="twitter:description" content="Cross-compiling works">
+  <meta property="twitter:title" content="WebGL Mapviewer Demo Online | BZ-Next: Modernizing BZFlag">
+  <meta property="twitter:description" content="Supporting WebGL in BZ-Next">
 
   
   <meta name="twitter:image" content="/assets/img/avatar-icon.png">
@@ -321,16 +321,16 @@
     <div class="row">
       <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
         <div class="post-heading">
-          <h1>MinGW support added to development branch</h1>
+          <h1>WebGL Mapviewer Demo Online</h1>
           
             
-              <h2 class="post-subheading">Cross-compiling works</h2>
+              <h2 class="post-subheading">Supporting WebGL in BZ-Next</h2>
             
           
           
            
             
-            <span class="post-meta">Posted on February 3, 2024</span>
+            <span class="post-meta">Posted on February 9, 2024</span>
             
             
           
@@ -378,9 +378,24 @@
       
 
       <div class="blog-post">
-        <p>MinGW64 cross compiling is now supported in the main development branch.</p>
+        <p>A WebGL map viewer demo app is online at <a href="https://bz-next.github.io/mapviewer/mapviewer.html">https://bz-next.github.io/mapviewer/mapviewer.html</a></p>
 
-<p>Check <a href="/building">building</a> page for info on how to compile for Windows.</p>
+<p><img src="/assets/img/mapviewer1.jpg" alt="Map Viewer Demo" /></p>
+
+<p>Currently the online demo can’t access any textures that aren’t bundled with the game, so try it on maps that don’t use custom textures.
+Meshes and so on should work fine, however. If you load a map that uses non-standard textures, those objects will appear white, and the app will lag a bit as it will output a bunch of errors in the background.</p>
+
+<p>In the future, I’ll upload the textures for some popular maps, so that those will appear properly in the app.</p>
+
+<p>The map viewer can also be built for desktop, where it can load any textures from images.bzflag.org that it likes.</p>
+
+<p><img src="/assets/img/mapviewer2.png" alt="Desktop Demo" /></p>
+
+<p>Try it out if you’re curious!</p>
+
+<p>The real power of the Magnum graphics library is being able to support web, mobile, and desktop all from the same codebase, so you can have one codebase that generates apps for all the various targets at the same time. This is a basic demo of getting something building from the BZFlag codebase that targets both WebGL and desktop.</p>
+
+<p>I’ll add the desktop version of the map viewer to the next Windows release. It could be a handy tool for previewing maps quickly.</p>
 
       </div>
 
@@ -407,19 +422,12 @@
       <ul class="pagination blog-pager">
         
         <li class="page-item previous">
-          <a class="page-link" href="/2024-02-03-meshgen-memory/" data-toggle="tooltip" data-placement="top" title="Mesh generation cleaned up">
+          <a class="page-link" href="/2024-02-08-webgl/" data-toggle="tooltip" data-placement="top" title="Emscripten WebGL Support">
             <i class="fas fa-arrow-left" alt="Previous Post"></i>
             <span class="d-none d-sm-inline-block">Previous Post</span>
           </a>
         </li>
         
-        
-        <li class="page-item next">
-          <a class="page-link" href="/2024-02-05-GLES2/" data-toggle="tooltip" data-placement="top" title="GLES2 support added to development branch">
-            <span class="d-none d-sm-inline-block">Next Post</span>
-            <i class="fas fa-arrow-right" alt="Next Post"></i>
-          </a>
-        </li>
         
       </ul>
       
