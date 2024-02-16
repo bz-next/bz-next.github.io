@@ -12,6 +12,17 @@
     
     
       <item>
+        <title>WebGL2 Map Editor Prototype Online</title>
+        <description>
+          WebGL2 Map Editor / Viewer - 
+          A fairly full-featured map viewer/editor is now online at https://bz-next.github.io/mapviewer/mapviewer.html The online editor/viewer can fetch textures from images.bzflag.org using the Emscripten fetch API and CORS. You can open the editor (found under the view menu), and tweak the currently loaded BZW file. Then, click “Update 3D View” and see your...
+        </description>
+        <pubDate>Fri, 16 Feb 2024 00:00:00 -0500</pubDate>
+        <link>/2024-02-16-mapviewer-editor/</link>
+        <guid isPermaLink="true">/2024-02-16-mapviewer-editor/</guid>
+      </item>
+    
+      <item>
         <title>WebGL Mapviewer Demo Online</title>
         <description>
           Supporting WebGL in BZ-Next - 
