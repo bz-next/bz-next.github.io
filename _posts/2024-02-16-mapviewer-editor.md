@@ -8,7 +8,7 @@ tags: [Site Updates]
 comments: true
 ---
 
-A fairly full-featured map viewer/editor is now online at [https://bz-next.github.io/mapviewer/mapviewer.html](https://bz-next.github.io/mapviewer3/mapviewer.html)
+A fairly full-featured map viewer/editor is now online at [https://bz-next.github.io/mapviewer3/mapviewer.html](https://bz-next.github.io/mapviewer3/mapviewer.html)
 
 ![Map Viewer Demo](/assets/img/mapedit.png)
 
