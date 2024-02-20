@@ -12,6 +12,8 @@ BZ-Next is an experimental fork of BZFlag that redoes the rendering engine from 
 
 See the [about the project](about) page for more information!
 
+And check out the awesomely cross-platform [Magnum Graphics Library](https://magnum.graphics/)!
+
 ## What does it currently look like?
 
 ![Rats Nest by Winny](assets/img/screen0.jpg)
@@ -29,7 +31,7 @@ BZ-Next is still in heavy development, so releases are expected to be buggy. Win
 
 ## What version of OpenGL do I need?
 
-The current goal is to aim for support for OpenGL 2.1, OpenGL ES 2.0, and WebGL 2. Some features might only be supported on more capable platforms. Currently, the development build may not function on all platforms. Help us test it out!
+The current goal is to aim for support for OpenGL >=2.1 and WebGL 2. Some features might only be supported on more capable platforms. Currently, the development build may not function on all platforms. Help us test it out!
 
 ## Follow development on GitHub!
 
