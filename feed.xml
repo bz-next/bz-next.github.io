@@ -12,6 +12,17 @@
     
     
       <item>
+        <title>ImGUI Docking and More Widgets</title>
+        <description>
+          Improving Debug UI - 
+          The app now has a pretty well-rounded assortment of debug widgets to inspect the state of map objects, materials, and so on. Widgets were updated to play nice with the “docking” version of ImGui, which is now integrated into the project. More functional layouts are now possible. ImGUI Docking Demo...
+        </description>
+        <pubDate>Tue, 20 Feb 2024 00:00:00 -0500</pubDate>
+        <link>/2024-02-20-imgui-widgets/</link>
+        <guid isPermaLink="true">/2024-02-20-imgui-widgets/</guid>
+      </item>
+    
+      <item>
         <title>Windows Map Editor Build Available</title>
         <description>
           Windows Map Editor / Viewer - 

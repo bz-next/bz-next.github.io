@@ -11,14 +11,14 @@
 
   
 
-  <title>BZ-Next Running on Librem 5 phone | BZ-Next: Modernizing BZFlag</title>
+  <title>ImGUI Docking and More Widgets | BZ-Next: Modernizing BZFlag</title>
 
   
   
   <meta name="author" content="BZ-Next">
   
 
-  <meta name="description" content="Supporting embedded OpenGL">
+  <meta name="description" content="Improving Debug UI">
 
   
 
@@ -79,8 +79,8 @@
 
   
   <meta property="og:site_name" content="BZ-Next: Modernizing BZFlag">
-  <meta property="og:title" content="BZ-Next Running on Librem 5 phone | BZ-Next: Modernizing BZFlag">
-  <meta property="og:description" content="Supporting embedded OpenGL">
+  <meta property="og:title" content="ImGUI Docking and More Widgets | BZ-Next: Modernizing BZFlag">
+  <meta property="og:description" content="Improving Debug UI">
 
   
   <meta property="og:image" content="/assets/img/avatar-icon.png">
@@ -91,9 +91,9 @@
   
   <meta property="og:article:author" content="BZ-Next">
   
-  <meta property="og:article:published_time" content="2024-02-05T00:00:00-05:00">
-  <meta property="og:url" content="/2024-02-05-Librem5/">
-  <link rel="canonical" href="/2024-02-05-Librem5/">
+  <meta property="og:article:published_time" content="2024-02-20T00:00:00-05:00">
+  <meta property="og:url" content="/2024-02-20-imgui-widgets/">
+  <link rel="canonical" href="/2024-02-20-imgui-widgets/">
   
 
   
@@ -102,8 +102,8 @@
   <meta name="twitter:site" content="@">
   <meta name="twitter:creator" content="@">
 
-  <meta property="twitter:title" content="BZ-Next Running on Librem 5 phone | BZ-Next: Modernizing BZFlag">
-  <meta property="twitter:description" content="Supporting embedded OpenGL">
+  <meta property="twitter:title" content="ImGUI Docking and More Widgets | BZ-Next: Modernizing BZFlag">
+  <meta property="twitter:description" content="Improving Debug UI">
 
   
   <meta name="twitter:image" content="/assets/img/avatar-icon.png">
@@ -347,16 +347,16 @@
     <div class="row">
       <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
         <div class="post-heading">
-          <h1>BZ-Next Running on Librem 5 phone</h1>
+          <h1>ImGUI Docking and More Widgets</h1>
           
             
-              <h2 class="post-subheading">Supporting embedded OpenGL</h2>
+              <h2 class="post-subheading">Improving Debug UI</h2>
             
           
           
            
             
-            <span class="post-meta">Posted on February 5, 2024</span>
+            <span class="post-meta">Posted on February 20, 2024</span>
             
             
           
@@ -404,17 +404,12 @@
       
 
       <div class="blog-post">
-        <p><a href="https://github.com/blast007">blast007</a> was able to build and run the BZ-Next client on a Librem 5, a linux phone with GLES2 support.</p>
+        <p>The app now has a pretty well-rounded assortment of debug widgets to inspect the state of map objects, materials, and so on.</p>
 
-<p><img src="/assets/img/librem5_2.png" alt="Missile Wars 2.3" />
-Missile Wars 2.3 rendered at around 30fps on the development client.</p>
+<p>Widgets were updated to play nice with the “docking” version of ImGui, which is now integrated into the project. More functional layouts are now possible.</p>
 
-<p><img src="/assets/img/librem5_1.png" alt="ImGUI Debug UI" />
-ImGUI debug UI rendered on the Librem 5.</p>
-
-<p>The framerate is about the same as the regular BZFlag client on this device, with textures and lighting enabled.
-The client seemed to be GPU bound, so there is room to do more work on the CPU side to ease the burden on the
-GPU on smaller devices such as these. Some form of culling outside of the GPU might be beneficial here.</p>
+<p><img src="assets/img/docking.jpg" alt="ImGUI Docking Demo" />
+ImGUI Docking Demo</p>
 
       </div>
 
@@ -441,19 +436,12 @@ GPU on smaller devices such as these. Some form of culling outside of the GPU mi
       <ul class="pagination blog-pager">
         
         <li class="page-item previous">
-          <a class="page-link" href="/2024-02-05-GLES2/" data-toggle="tooltip" data-placement="top" title="GLES2 support added to development branch">
+          <a class="page-link" href="/2024-02-18-mapeditor-release/" data-toggle="tooltip" data-placement="top" title="Windows Map Editor Build Available">
             <i class="fas fa-arrow-left" alt="Previous Post"></i>
             <span class="d-none d-sm-inline-block">Previous Post</span>
           </a>
         </li>
         
-        
-        <li class="page-item next">
-          <a class="page-link" href="/2024-02-08-webgl/" data-toggle="tooltip" data-placement="top" title="Emscripten WebGL Support">
-            <span class="d-none d-sm-inline-block">Next Post</span>
-            <i class="fas fa-arrow-right" alt="Next Post"></i>
-          </a>
-        </li>
         
       </ul>
       
