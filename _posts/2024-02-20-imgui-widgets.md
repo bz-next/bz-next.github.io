@@ -12,5 +12,5 @@ The app now has a pretty well-rounded assortment of debug widgets to inspect the
 
 Widgets were updated to play nice with the "docking" version of ImGui, which is now integrated into the project. More functional layouts are now possible.
 
-![ImGUI Docking Demo](assets/img/docking.jpg)
+![ImGUI Docking Demo](/assets/img/docking.jpg)
 ImGUI Docking Demo
