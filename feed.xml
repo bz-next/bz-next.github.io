@@ -12,6 +12,22 @@
     
     
       <item>
+        <title>Viewer Update and Map Archive</title>
+        <description>
+          Making BZFlag Maps More Accessible - 
+          The map viewer / editor now has a built-in map archive.
+
+Maps are indexed from https://bz-next.github.io/maparchive/maps.json and can be downloaded by the app.
+
+Try it out at https://bz-next.github.io/mapviewer4/mapviewer.html
+
+        </description>
+        <pubDate>Thu, 22 Feb 2024 00:00:00 -0500</pubDate>
+        <link>/2024-02-22-map-archive/</link>
+        <guid isPermaLink="true">/2024-02-22-map-archive/</guid>
+      </item>
+    
+      <item>
         <title>ImGUI Docking and More Widgets</title>
         <description>
           Improving Debug UI - 

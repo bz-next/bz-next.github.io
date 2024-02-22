@@ -11,14 +11,14 @@
 
   
 
-  <title>About BZ-Next | BZ-Next: Modernizing BZFlag</title>
+  <title>Viewer Update and Map Archive | BZ-Next: Modernizing BZFlag</title>
 
   
   
   <meta name="author" content="BZ-Next">
   
 
-  <meta name="description" content="Modernizing BZFlag, Building New Tools for the Community">
+  <meta name="description" content="Making BZFlag Maps More Accessible">
 
   
 
@@ -79,17 +79,21 @@
 
   
   <meta property="og:site_name" content="BZ-Next: Modernizing BZFlag">
-  <meta property="og:title" content="About BZ-Next | BZ-Next: Modernizing BZFlag">
-  <meta property="og:description" content="Modernizing BZFlag, Building New Tools for the Community">
+  <meta property="og:title" content="Viewer Update and Map Archive | BZ-Next: Modernizing BZFlag">
+  <meta property="og:description" content="Making BZFlag Maps More Accessible">
 
   
   <meta property="og:image" content="/assets/img/avatar-icon.png">
   
 
   
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="/about/">
-  <link rel="canonical" href="/about/">
+  <meta property="og:type" content="article">
+  
+  <meta property="og:article:author" content="BZ-Next">
+  
+  <meta property="og:article:published_time" content="2024-02-22T00:00:00-05:00">
+  <meta property="og:url" content="/2024-02-22-map-archive/">
+  <link rel="canonical" href="/2024-02-22-map-archive/">
   
 
   
@@ -98,8 +102,8 @@
   <meta name="twitter:site" content="@">
   <meta name="twitter:creator" content="@">
 
-  <meta property="twitter:title" content="About BZ-Next | BZ-Next: Modernizing BZFlag">
-  <meta property="twitter:description" content="Modernizing BZFlag, Building New Tools for the Community">
+  <meta property="twitter:title" content="Viewer Update and Map Archive | BZ-Next: Modernizing BZFlag">
+  <meta property="twitter:description" content="Making BZFlag Maps More Accessible">
 
   
   <meta name="twitter:image" content="/assets/img/avatar-icon.png">
@@ -350,15 +354,19 @@
   <div class="container-md">
     <div class="row">
       <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
-        <div class="page-heading">
-          <h1>About BZ-Next</h1>
+        <div class="post-heading">
+          <h1>Viewer Update and Map Archive</h1>
           
             
-              <hr class="small">
-              <span class="page-subheading">Modernizing BZFlag, Building New Tools for the Community</span>
+              <h2 class="post-subheading">Making BZFlag Maps More Accessible</h2>
             
           
           
+           
+            
+            <span class="post-meta">Posted on February 22, 2024</span>
+            
+            
           
         </div>
       </div>
@@ -376,47 +384,86 @@
 <main class=" container-md ">
   <div class="row">
     <div class=" col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 ">
+
       
+        
+        
+        
 
-      <h2 id="what-is-it">What is it?</h2>
-
-<p>BZ-Next is an experimental fork of BZFlag that redoes the rendering engine from the ground-up, using modern OpenGL, and the Magnum graphics library.</p>
-
-<p>A new renderer will open the doors to game UI improvements, development of new tools (map editors, admin tools), and, most importantly, custom shaders!
-There should also be significant framerate improvements for most maps. Development versions of BZ-Next routinely break 1000fps in tests, and efficiency
-is a key focus.</p>
-
-<p>The BZ-Next project is already a full-featured BZFlag client. You can connect to a server, chat, watch the scoreboard, and inspect the map. Tanks, bullets,
-effects and sounds will be added incrementally.</p>
-
-<h2 id="project-philosophy-what-this-project-isnt">Project philosophy (what this project isn’t)</h2>
-
-<p>BZFlag is already a fun game. The purpose of this project is not to change gameplay, physics, or add new, breaking client and server features. Rather,
-the goal is 100% compatibility with existing BZFlag infrastructure.</p>
-
-<p>The goal of this project is not to overhaul the game UI (menus, UI layout, etc). That is a job best left to a UI-focused team. The UI developed
-as part of this project has a few key purposes:</p>
-
-<ul>
-  <li>To get the game into a playable, functional state with the new renderer</li>
-  <li>To provide debug info and tools</li>
-  <li>To serve as the basis for a map editor in the future</li>
-</ul>
-
-<p>The new rendering engine will, however, enable developers to use modern UI development tools, which would make a UI overhaul for the game possible.</p>
-
-<h2 id="whats-different-about-it">What’s different about it</h2>
-<ul>
-  <li>It’s much faster than the classic BZFlag client for real-world maps. Framerates can be 5-10x higher in the new client when compared to the old one.</li>
-  <li>Modern OpenGL allows for custom shaders, which could allow shadow mapping, bloom, ambient occlusion, PBR, and other cool effects that could make maps look awesome.</li>
-  <li>Wraps up legacy code in a new interface that allows access to map geometry, allowing developers to more easily build tools like map editors, viewers, custom clients, etc.</li>
-  <li>Easy integration with modern UI toolkits, as well as debug toolkits like ImGui</li>
-</ul>
-
-
+        <div id="header-gh-btns">
+          
+            
+              
+                  <iframe src="https://ghbtns.com/github-btn.html?user=bz-next&repo=bz-next&type=star&count=true" frameborder="0" scrolling="0" width="120px" height="20px"></iframe>
+                
+            
+              
+                  <iframe src="https://ghbtns.com/github-btn.html?user=bz-next&repo=bz-next&type=fork&count=true" frameborder="0" scrolling="0" width="120px" height="20px"></iframe>
+                
+            
+              
+                  <iframe src="https://ghbtns.com/github-btn.html?user=bz-next&type=follow&count=true" frameborder="0" scrolling="0" width="220px" height="20px"></iframe>
+              
+            
+          
+        </div>
       
 
       
+
+      <div class="blog-post">
+        <p>The map viewer / editor now has a built-in map archive.</p>
+
+<p>Maps are indexed from https://bz-next.github.io/maparchive/maps.json and can be downloaded by the app.</p>
+
+<p>Try it out at https://bz-next.github.io/mapviewer4/mapviewer.html</p>
+
+      </div>
+
+      
+        <div class="blog-tags">
+          <span>Tags:</span>
+          
+            <a href="/tags#Site Updates">Site Updates</a>
+          
+        </div>
+      
+
+      
+
+      
+        <!-- Check if any share-links are active -->
+
+
+
+
+
+      
+
+      <ul class="pagination blog-pager">
+        
+        <li class="page-item previous">
+          <a class="page-link" href="/2024-02-20-imgui-widgets/" data-toggle="tooltip" data-placement="top" title="ImGUI Docking and More Widgets">
+            <i class="fas fa-arrow-left" alt="Previous Post"></i>
+            <span class="d-none d-sm-inline-block">Previous Post</span>
+          </a>
+        </li>
+        
+        
+      </ul>
+      
+  
+  
+  
+
+  
+
+
+  
+
+  
+
+
 
     </div>
   </div>
