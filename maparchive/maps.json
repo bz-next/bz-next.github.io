@@ -46,6 +46,15 @@
                     "license": "Ask author to host"
                 }
             ]
+        },
+        "Winny": {
+            "maps": [
+                {
+                    "name": "Rat's Nest",
+                    "file": "winny_ratsnest.bzw",
+                    "license": "CC BY-NC-SA 2.5 CA Deed"
+                }
+            ]
         }
     }
 }
