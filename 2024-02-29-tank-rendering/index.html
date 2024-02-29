@@ -11,14 +11,14 @@
 
   
 
-  <title>Windows Map Editor Build Available | BZ-Next: Modernizing BZFlag</title>
+  <title>Tank Rendering and Animation | BZ-Next: Modernizing BZFlag</title>
 
   
   
   <meta name="author" content="BZ-Next">
   
 
-  <meta name="description" content="Windows Map Editor / Viewer">
+  <meta name="description" content="Drawing player tanks in new renderer">
 
   
 
@@ -79,8 +79,8 @@
 
   
   <meta property="og:site_name" content="BZ-Next: Modernizing BZFlag">
-  <meta property="og:title" content="Windows Map Editor Build Available | BZ-Next: Modernizing BZFlag">
-  <meta property="og:description" content="Windows Map Editor / Viewer">
+  <meta property="og:title" content="Tank Rendering and Animation | BZ-Next: Modernizing BZFlag">
+  <meta property="og:description" content="Drawing player tanks in new renderer">
 
   
   <meta property="og:image" content="/assets/img/avatar-icon.png">
@@ -91,9 +91,9 @@
   
   <meta property="og:article:author" content="BZ-Next">
   
-  <meta property="og:article:published_time" content="2024-02-18T00:00:00-05:00">
-  <meta property="og:url" content="/2024-02-18-mapeditor-release/">
-  <link rel="canonical" href="/2024-02-18-mapeditor-release/">
+  <meta property="og:article:published_time" content="2024-02-29T00:00:00-05:00">
+  <meta property="og:url" content="/2024-02-29-tank-rendering/">
+  <link rel="canonical" href="/2024-02-29-tank-rendering/">
   
 
   
@@ -102,8 +102,8 @@
   <meta name="twitter:site" content="@">
   <meta name="twitter:creator" content="@">
 
-  <meta property="twitter:title" content="Windows Map Editor Build Available | BZ-Next: Modernizing BZFlag">
-  <meta property="twitter:description" content="Windows Map Editor / Viewer">
+  <meta property="twitter:title" content="Tank Rendering and Animation | BZ-Next: Modernizing BZFlag">
+  <meta property="twitter:description" content="Drawing player tanks in new renderer">
 
   
   <meta name="twitter:image" content="/assets/img/avatar-icon.png">
@@ -363,16 +363,16 @@
     <div class="row">
       <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
         <div class="post-heading">
-          <h1>Windows Map Editor Build Available</h1>
+          <h1>Tank Rendering and Animation</h1>
           
             
-              <h2 class="post-subheading">Windows Map Editor / Viewer</h2>
+              <h2 class="post-subheading">Drawing player tanks in new renderer</h2>
             
           
           
            
             
-            <span class="post-meta">Posted on February 18, 2024</span>
+            <span class="post-meta">Posted on February 29, 2024</span>
             
             
           
@@ -420,9 +420,14 @@
       
 
       <div class="blog-post">
-        <p>A windows build of the map editor is now available. It is in sync with the current prototype at <a href="https://bz-next.github.io/mapviewer3/mapviewer.html">https://bz-next.github.io/mapviewer3/mapviewer.html</a></p>
+        <p>The client can now render animated player tanks. Tread and wheel animation, explosions, and resizing (squish factor, flags like tiny/narrow/thief etc) are supported.</p>
 
-<p><a href="https://github.com/bz-next/bz-next/releases/tag/Windows_Prerelease_2">Map Editor Release on GitHub</a></p>
+<p>You can now watch much of an in-progress game through the client.</p>
+
+<p>Tanks use the main material manager for all materials, for uniformity with other code.</p>
+
+<p><img src="/assets/img/tanks.png" alt="Tanks" />
+Tank Rendering Demo</p>
 
       </div>
 
@@ -449,19 +454,12 @@
       <ul class="pagination blog-pager">
         
         <li class="page-item previous">
-          <a class="page-link" href="/2024-02-16-mapviewer-editor/" data-toggle="tooltip" data-placement="top" title="WebGL2 Map Editor Prototype Online">
+          <a class="page-link" href="/2024-02-22-map-archive/" data-toggle="tooltip" data-placement="top" title="Viewer Update and Map Archive">
             <i class="fas fa-arrow-left" alt="Previous Post"></i>
             <span class="d-none d-sm-inline-block">Previous Post</span>
           </a>
         </li>
         
-        
-        <li class="page-item next">
-          <a class="page-link" href="/2024-02-20-imgui-widgets/" data-toggle="tooltip" data-placement="top" title="ImGUI Docking and More Widgets">
-            <span class="d-none d-sm-inline-block">Next Post</span>
-            <i class="fas fa-arrow-right" alt="Next Post"></i>
-          </a>
-        </li>
         
       </ul>
       
