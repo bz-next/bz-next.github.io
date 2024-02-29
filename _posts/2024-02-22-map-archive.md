@@ -10,6 +10,6 @@ comments: true
 
 The map viewer / editor now has a built-in map archive.
 
-Maps are indexed from https://bz-next.github.io/maparchive/maps.json and can be downloaded by the app.
+Maps are indexed from [https://bz-next.github.io/maparchive/maps.json](https://bz-next.github.io/maparchive/maps.json) and can be downloaded by the app.
 
-Try it out at https://bz-next.github.io/mapviewer4/mapviewer.html
+Try it out at [https://bz-next.github.io/mapviewer4/mapviewer.html](https://bz-next.github.io/mapviewer4/mapviewer.html)
