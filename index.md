@@ -16,11 +16,11 @@ And check out the awesomely cross-platform [Magnum Graphics Library](https://mag
 
 ## What does it currently look like?
 
+![Urban Jungle by Army of One](assets/img/urbanclouds.jpg)
+Map: Urban Jungle by Army of One
+
 ![Rats Nest by Winny](assets/img/screen0.jpg)
 Map: Rats Nest by Winny
-
-![Urban Jungle by Army of One](assets/img/screen1.jpg)
-Map: Urban Jungle by Army of One
 
 ![Fairground by Ian](assets/img/screen2.jpg)
 Map: Fairground by Ian
