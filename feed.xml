@@ -12,6 +12,17 @@
     
     
       <item>
+        <title>Shaders and Shadows Release</title>
+        <description>
+          Eye-candy and navigation enhancements - 
+          The online mapviewer has been updated to support the new shader and shadow features. https://bz-next.github.io/mapviewer6/mapviewer.html Mouse navigation has been improved. Press numpad 0 to reset to the default view. Hold shift to pan. There is a new windows release available for download at https://github.com/bz-next/bz-next/releases/tag/Windows_Prerelease_3 Embedding of scene in shader skydome...
+        </description>
+        <pubDate>Thu, 21 Mar 2024 00:00:00 -0400</pubDate>
+        <link>/2024-03-21-shaders-release/</link>
+        <guid isPermaLink="true">/2024-03-21-shaders-release/</guid>
+      </item>
+    
+      <item>
         <title>Shaders and Shadows</title>
         <description>
           Flexible rendering pipeline - 
